@@ -318,6 +318,77 @@ body {
 }
 
 
+/* courses section */
+.courses {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.courses_main {
+    margin-top: 40px;
+}
+
+.courses_title h3 {
+    font-weight: 900;
+    font-size: 96px;
+    color: #ffd500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.courses_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.courses_box {
+    background-color: #ffd500;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ffd500;
+    padding: 15px;
+    text-align: center;
+    color: #000;
+    font-family: "Tektur", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses_box img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 15px;
+}
+
+.courses_box p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.courses_box button {
+    background-color: #000;
+    color: #ffd500;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.courses_box button:hover,
+.courses_box button:focus {
+    background-color: #333;
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -381,22 +452,25 @@ body {
         padding-top: 60px;
         gap: 30px;
         text-align: center;
+
         .hero-text {
             padding: 24px 20px;
             border-radius: 16px;
-    
+
             h1 {
                 font-size: 36px;
                 line-height: 1.2;
             }
-    
+
             p {
                 font-size: 18px;
                 margin-bottom: 16px;
             }
+
             .hero-subtext {
-             font-size: 14px;
+                font-size: 14px;
             }
+
             .hero-btn {
                 font-size: 16px;
                 padding: 10px 20px;
@@ -407,7 +481,7 @@ body {
 
 
 
-    .hero-image{
+    .hero-image {
         width: 180px;
         height: auto;
     }
@@ -469,5 +543,11 @@ body {
     /* === Optional: Make container width narrower === */
     .container {
         padding: 0 10px;
+    }
+
+
+    .courses_boxes {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
